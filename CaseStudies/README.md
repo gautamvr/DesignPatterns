@@ -1,4 +1,4 @@
-# DesignPatterns
+# Case Study
 
 ## Problem Statement:
 
