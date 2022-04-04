@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>eff1a81e-c4cd-4928-945f-5b85817352cd</ProjectGuid>
+    <ProjectGuid>d20d273d-cad8-4393-be47-306fe7798287</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CompositeDesignPattern</RootNamespace>
-    <AssemblyName>CompositeDesignPattern</AssemblyName>
+    <RootNamespace>CompositeDesignPattern_Example</RootNamespace>
+    <AssemblyName>CompositeDesignPattern_Example</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

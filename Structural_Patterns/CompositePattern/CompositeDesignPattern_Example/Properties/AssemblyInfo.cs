@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CompositeDesignPattern")]
+[assembly: AssemblyTitle("CompositeDesignPattern_Example")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CompositeDesignPattern")]
+[assembly: AssemblyProduct("CompositeDesignPattern_Example")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("eff1a81e-c4cd-4928-945f-5b85817352cd")]
+[assembly: Guid("d20d273d-cad8-4393-be47-306fe7798287")]
 
 // Version information for an assembly consists of the following four values:
 //
