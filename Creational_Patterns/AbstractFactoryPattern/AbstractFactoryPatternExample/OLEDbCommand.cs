@@ -1,6 +1,6 @@
 ﻿namespace AbstractFactoryPatternExample;
 
-public class ODBCCommand:ICommand
+public class OLEDbCommand:ICommand
 {
     public void Execute(IConnection connection)
     {

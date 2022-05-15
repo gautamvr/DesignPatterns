@@ -4,16 +4,16 @@ public class OLEDbProvider:IDbProvider
 {
     public IConnection CreateConnection()
     {
-        throw new NotImplementedException();
+        return new OLEDbConnection();
     }
 
     public ICommand CreateCommand()
     {
-        throw new NotImplementedException();
+        return new OLEDbCommand();
     }
 
     public ITransaction CreateTransaction()
     {
-        throw new NotImplementedException();
+        return new OLEDbTransaction();
     }
 }

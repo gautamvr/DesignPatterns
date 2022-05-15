@@ -1,6 +1,6 @@
 ﻿namespace AbstractFactoryPatternExample;
 
-public class ODBCTransaction:ITransaction
+public class OLEDbTransaction:ITransaction
 {
     public void GetCommand(ICommand command)
     {

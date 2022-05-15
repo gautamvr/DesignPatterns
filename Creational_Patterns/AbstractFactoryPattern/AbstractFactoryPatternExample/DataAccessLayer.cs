@@ -21,7 +21,9 @@ namespace AbstractFactoryPatternExample
 
         public void PerformTask()
         {
-            Console.WriteLine();
+            _command.Execute(_connection);
+            _connection.Interact(_transaction);
+            _transaction.GetCommand(_command);
         }
     }
 }

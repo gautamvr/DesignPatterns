@@ -1,19 +1,19 @@
 ﻿namespace AbstractFactoryPatternExample;
 
-public class ODBCDbProvider:IDbProvider
+public class ODBCProvider:IDbProvider
 {
     public IConnection CreateConnection()
     {
-        new 
+        return new ODBCConnection();
     }
 
     public ICommand CreateCommand()
     {
-        throw new NotImplementedException();
+        return new ODBCCommand();
     }
 
     public ITransaction CreateTransaction()
     {
-        throw new NotImplementedException();
+        return new ODBCTransaction();
     }
 }

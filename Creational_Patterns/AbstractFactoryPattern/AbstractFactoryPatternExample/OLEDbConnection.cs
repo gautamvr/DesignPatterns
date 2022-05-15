@@ -1,6 +1,6 @@
 ﻿namespace AbstractFactoryPatternExample;
 
-public class ODBCConnection:IConnection
+public class OLEDbConnection:IConnection
 {
     public void Interact(ITransaction transaction)
     {
