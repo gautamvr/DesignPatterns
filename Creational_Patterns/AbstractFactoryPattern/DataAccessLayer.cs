@@ -14,15 +14,15 @@ namespace AbstractFactoryPatternExample
 
         public DataAccessLayer(IDbProvider dbProvider)
         {
-            _command = dbProvider.CreateCommand();
             _connection = dbProvider.CreateConnection();
+            _command = dbProvider.CreateCommand();
             _transaction = dbProvider.CreateTransaction();
         }
 
         public void PerformTask()
         {
-            _command.Execute(_connection);
             _connection.Interact(_transaction);
+            _command.Execute(_connection);
             _transaction.GetCommand(_command);
         }
     }
