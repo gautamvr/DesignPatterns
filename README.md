@@ -8,5 +8,3 @@ The basic types of design patterns are as follows:
  - Behavioural Patterns
  
 The UML diagrams and the code examples for each pattern in the respective folders are added.
-
-More will be added. Follow this space..
