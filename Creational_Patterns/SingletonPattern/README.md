@@ -6,4 +6,4 @@ Singleton pattern ensures that only single instance of the particular object is 
 
 ## UML Diagram:
 
-![alt-text]()
+![alt-text](https://github.com/gautamvr/DesignPatterns/blob/main/Creational_Patterns/SingletonPattern/SingletonPattern.PNG)
