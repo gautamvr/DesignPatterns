@@ -26,3 +26,9 @@ Import trade data from the Trade Data System and Import counterparty data from t
 Distribute the report to the business users before the start of the next trading day (9am) in
 
 Singapore. Provide a way for a subset of the business users to configure and maintain the external parameters used by the risk calculations.
+
+
+
+The design for the above system is as below UML diagram:
+
+![alt-text](https://github.com/gautamvr/DesignPatterns/blob/main/CaseStudies/RiskManagementSystem_UML.PNG)
