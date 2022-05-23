@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace ChainOfResponsibilityPattern
 {
-    internal class ImageAugmentationHandler
+    abstract class ImageAugmentationHandler
     {
+        protected ImageAugmentationHandler _nextHandler;
+
+        public abstract void ProcessImage();
+
+        public void SetNextHandler(ImageAugmentationHandler handler)
+        {
+            _nextHandler = handler;
+        }
     }
 }
