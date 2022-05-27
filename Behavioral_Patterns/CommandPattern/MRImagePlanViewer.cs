@@ -23,15 +23,19 @@ namespace CommandPattern
 
         public void ClickButton()
         {
-            Console.WriteLine($"Perfoming execute of the command {_currentCommand?.GetType().Name}");
-            _currentCommand?.Execute();
-            
+            if (_currentCommand != null)
+            {
+                Console.WriteLine($"Perfoming execute of the command {_currentCommand.GetType().Name}");
+                _currentCommand.Execute();
+                _commandStack.Push(_currentCommand);
+            }
         }
 
         public void ClickUndo()
         {
-            Console.WriteLine($"Perfoming UNDO of the command {_currentCommand?.GetType().Name}");
-            _currentCommand?.Undo();
+            var lastCommmand = _commandStack.Pop();
+            Console.WriteLine($"Perfoming UNDO of the command {lastCommmand?.GetType().Name}");
+            lastCommmand?.Undo();
 
         }
     }
