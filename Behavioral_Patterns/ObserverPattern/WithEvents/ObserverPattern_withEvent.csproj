@@ -7,10 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="WithEvents\**" />
-    <EmbeddedResource Remove="WithEvents\**" />
-    <None Remove="WithEvents\**" />
-  </ItemGroup>
-
 </Project>

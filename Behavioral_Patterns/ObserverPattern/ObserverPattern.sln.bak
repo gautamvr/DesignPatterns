@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPattern", "ObserverPattern.csproj", "{F134D6B6-127F-441D-9B97-2E0510B7FD64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPattern_withEvent", "..\ObserverPattern\WithEvents\ObserverPattern_withEvent.csproj", "{7F81B31C-4976-4B35-A9C9-70200F516F59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPattern_withEvent", "..\ObserverPattern\ObserverPattern_withEvent.csproj", "{7F81B31C-4976-4B35-A9C9-70200F516F59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
