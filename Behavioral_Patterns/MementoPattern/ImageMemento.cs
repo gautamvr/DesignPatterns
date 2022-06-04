@@ -9,23 +9,21 @@ namespace MementoPattern
     internal class ImageMemento : IMemento
     {
         private string _imagePixelData;
+        private int _imageSliceNum;
 
-        private int _imageSliceNums;
+        private ImageParameters _imageParameters;
 
-        public ImageMemento(string imagePixelData,int sliceNums)
+        public ImageMemento(ImageParameters imageParameters,string imageData,int imageSlices)
         {
-            _imagePixelData = imagePixelData;
-            _imageSliceNums = sliceNums;
+            _imageParameters = imageParameters;
+            _imagePixelData = imageData;
+            _imageSliceNum = imageSlices;
+
         }
 
-        public string GetImageData()
+        public void RestoreImage()
         {
-            return _imagePixelData;
-        }
-
-        public int GetSliceNums()
-        {
-            return _imageSliceNums;
+            _imageParameters.SetImageData(_imagePixelData,_imageSliceNum);
         }
     }
 }

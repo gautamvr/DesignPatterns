@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MementoPattern
 {
-    internal class ImageParameters
+    internal class ImageParameters : IImageParameter
     {
         private string _imagePixelData;
 
@@ -26,14 +26,13 @@ namespace MementoPattern
 
         public IMemento SaveImage()
         {
-            return new ImageMemento(_imagePixelData, _imageSliceNums);
+            return new ImageMemento(this,_imagePixelData, _imageSliceNums);
         }
 
-        public void RestoreImage(IMemento memento)
+        public void SetImageData(string imageData, int sliceNums)
         {
-            var imageMemento = memento as ImageMemento;
-            _imagePixelData = imageMemento.GetImageData();
-            _imageSliceNums = imageMemento.GetSliceNums();
+            _imagePixelData = imageData;
+            _imageSliceNums = sliceNums;;
         }
 
         public void PrintCurrentDetails()

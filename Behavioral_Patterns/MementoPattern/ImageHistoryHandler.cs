@@ -10,9 +10,9 @@ namespace MementoPattern
     {
         private Stack<IMemento> _imageHistory;
 
-        private ImageParameters _imageParameters;
+        private IImageParameter _imageParameters;
 
-        public ImageHistoryHandler(ImageParameters imageParameters)
+        public ImageHistoryHandler(IImageParameter imageParameters)
         {
             _imageParameters = imageParameters;
             _imageHistory = new Stack<IMemento>();
@@ -30,7 +30,7 @@ namespace MementoPattern
             if (_imageHistory.Count > 0)
             {
                 var lastImage = _imageHistory.Pop();
-                _imageParameters.RestoreImage(lastImage);
+                lastImage.RestoreImage();
             }
             
         }
