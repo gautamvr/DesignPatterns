@@ -1,4 +1,4 @@
-# Mememnto Pattern
+# Memento Pattern
 
 This pattern let's one store the state of an object and restore it's state without having to reveal about it's internal properties and not violating Encapusaltion.
 
@@ -9,4 +9,4 @@ And ImageMemento has the functionality to restore the data which calls the Image
 
 ### UML class diagram:
 
-![alt-text](https://github.com/gautamvr/DesignPatterns/blob/main/Behavioral_Patterns/MementoPatern/MementoPatternUML.PNG)
+![alt-text](https://github.com/gautamvr/DesignPatterns/blob/main/Behavioral_Patterns/MementoPattern/MementoPatternUML.PNG)
