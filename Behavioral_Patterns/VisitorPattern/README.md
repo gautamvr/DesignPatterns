@@ -9,3 +9,6 @@ In the example, each derived class of the type DIImage has a function implementa
 ### UML class diagram:
 
 ![alt-text](https://github.com/gautamvr/DesignPatterns/blob/main/Behavioral_Patterns/VisitorPattern/VisitorPatternUML.PNG)
+
+
+[Note : In C#, This behaviour can be tackled by passing the image parameter type with dynamic keyword in the planningTool function call. That way, the appropriate function overload would be called at runtime rather than assigning the base type function in compile time. Visitor pattern might not be needed in that case, but the risks with dynamic keyword are to be noted.]
