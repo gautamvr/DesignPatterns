@@ -6,29 +6,30 @@ using System.Threading.Tasks;
 
 namespace BridgePattern
 {
-    internal class MRScannerSimulator:IMRScanner
+    internal class MRBayScanner : IMRScanner
     {
         public bool IsScanStarted { get; private set; }
+
         public void StartScan()
         {
+            Console.WriteLine("Scan started via actual bay MR scanner");
             IsScanStarted = true;
-            Console.WriteLine("Scan is started from simulator");
         }
 
         public void StopScan()
         {
+            Console.WriteLine("Scan started via actual bay MR scanner");
             IsScanStarted = false;
-            Console.WriteLine("Scan is stopped from simulator");
         }
 
         public void StartReconstruction()
         {
-            Console.WriteLine("Recon is started");
+            Console.WriteLine("Reconstruction is started in MR scanner");
         }
 
         public void StartPostProc()
         {
-            Console.WriteLine("Post processing is started");
+            Console.WriteLine("Post proc is started in MR Scanner");
         }
     }
 }

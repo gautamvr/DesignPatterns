@@ -11,3 +11,13 @@ IMRConsole ingeniaConsole = new IngeniaConsole(scanSimulator);
 
 ingeniaConsole.PerformScan();
 ingeniaConsole.PerformPostProcessing();
+
+
+IMRConsole prodivaConsole = new ProdivaMRConsole(scanSimulator);
+prodivaConsole.PerformScan();
+prodivaConsole.PerformPostProcessing();
+
+IMRScanner mrBayScanner = new MRBayScanner();
+prodivaConsole = new ProdivaMRConsole(mrBayScanner);
+prodivaConsole.PerformScan();
+prodivaConsole.PerformPostProcessing();

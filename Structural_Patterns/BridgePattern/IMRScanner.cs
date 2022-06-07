@@ -5,7 +5,7 @@
 /// </summary>
 public interface IMRScanner
 {
-    bool IsScanStarted { get; set; }
+    bool IsScanStarted { get; }
 
     void StartScan();
 

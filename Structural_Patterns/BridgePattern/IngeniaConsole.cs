@@ -8,7 +8,8 @@ public class IngeniaConsole:BaseMRConsole
 
     public override void PerformScan()
     {
-        if (_mrScanner.IsScanStarted)
+        Console.WriteLine("\nPerforming scan in Ingenia console");
+        if (!_mrScanner.IsScanStarted)
         {
             _mrScanner.StartScan();;
             _mrScanner.StartReconstruction();
@@ -18,7 +19,7 @@ public class IngeniaConsole:BaseMRConsole
 
     public override void PerformPostProcessing()
     {
-        if (!_mrScanner.IsScanStarted)
+        if (_mrScanner.IsScanStarted)
         {
             _mrScanner.StopScan();
             _mrScanner.StartPostProc();
