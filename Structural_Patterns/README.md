@@ -12,3 +12,5 @@ Following are the main structual patterns used in Software Engineering:
 - Facade Pattern
 - Flyweight Pattern
 - Proxy Pattern
+
+Examples and UML class diagrams are added in it's respective folders.
